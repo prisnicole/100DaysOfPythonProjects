@@ -1,7 +1,7 @@
 from random import sample
 from art import logo, vs
 from game_data import data 
-
+from replit import clear
 # print(len(data))
 # select questions 
 def select_pair():
@@ -50,6 +50,7 @@ def compare_follower_count(guess, pair):
 
 
 def game():
+  print(logo)
   score = 0
   is_correct = True
   while is_correct: 
@@ -60,6 +61,7 @@ def game():
     if is_correct: 
       score+= 1
       print(f"That's right! Current Score {score}")
+      clear()
   
   print(f"That was a wrong guess, you lose! Your score is {score}")
   return 
