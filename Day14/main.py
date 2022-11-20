@@ -2,19 +2,17 @@ from random import sample
 from art import logo, vs
 from game_data import data 
 from replit import clear
-# print(len(data))
-# select questions 
+
 def select_pair():
   """
   randomly selects 2 unique elements in game_data 
   returns the elements in a list 
   """
-  # generate random number btw 1 - 50
   # a sample() function for random sampling, randomly picking more than one element from the list without repeating elements. It returns a list of unique items chosen randomly from the list, sequence, or set. 
   pair = sample(data, 2)
   return pair
 
-# select_pair
+
 def generate_question(pair): 
   """
   Takes a list of 2 dictionary as input 
